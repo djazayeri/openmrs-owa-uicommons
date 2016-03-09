@@ -4,7 +4,7 @@
 
 This repository contains the uicommons OpenMRS Open Web App.
 
-> Add a description of what your app does here.
+It contains common CSS styling and page decoration elements that can be used in other OWAs.
 
 For further documentation about OpenMRS Open Web Apps see [the wiki page](https://wiki.openmrs.org/display/docs/Open+Web+Apps+Module).
 
@@ -22,13 +22,11 @@ This will create a file called `uicommons.zip` file in the `dist` directory, whi
 
 ### Local Deploy
 
-To deploy directly to your local Open Web Apps directory, run:
+To deploy directly to your local Open Web Apps directory, set the value of `LOCAL_OWA_FOLDER` in gulpfile.js and run:
 
 ````
 gulp deploy-local
 ````
-
-This will build and deploy the app to the `/Users/djazayer/openmrs/openmrs-platform` directory. To change the deploy directory, edit the `LOCAL_OWA_FOLDER` variable in `gulpfile.js`.
 
 ### Extending
 
@@ -53,7 +51,7 @@ Any files that you add manually must be added in the `app` directory.
 [MPL 2.0 w/ HD](http://openmrs.org/license/) © [OpenMRS Inc.](http://www.openmrs.org/)
 
 
-## WHAT TO DO
+## WHAT I DID TO PULL THINGS IN FROM THE UICOMMONS MODULE
 
 1. Copy openmrs-module-uicommons/scss/src/main/resources to openmrs-owa-uicommons/src/scss
 * Move everything from sass/reference up one directory
