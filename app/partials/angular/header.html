@@ -1,0 +1,26 @@
+<header>
+    <div class="logo">
+        <a href="../../">
+            <img src="images/openmrs-with-title-small.png"/>
+        </a>
+    </div>
+
+    <ul class="user-options">
+        <li class="identifier" ng-show="sessionContext.user">
+            <i class="icon-user small"></i>
+            {{ sessionContext.user.username || sessionContext.user.systemId }}
+        </li>
+        <li class="change-location" ng-show="sessionContext.sessionLocation">
+            <a href="javascript:void(0);">
+                <i class="icon-map-marker small"></i>
+                {{ sessionContext.sessionLocation.display }}
+            </a>
+        </li>
+        <li class="logout" ng-show="sessionContext.user">
+            <a href="../../logout">
+                Logout
+                <i class="icon-signout small"></i>
+            </a>
+        </li>
+    </ul>
+</header>
